@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -10,15 +9,15 @@
 <body>
 
 <header class="header">
-  <div class="logo-area">
+  <div class="logo-wrap">
     <div class="logo">SUJAIN</div>
     <div class="sub-logo">대전 문화공원 수자인</div>
   </div>
 
   <nav>
-    <a href="#about">사업개요</a>
     <a href="#forest">숲세권</a>
     <a href="#premium">프리미엄</a>
+    <a href="#location">입지환경</a>
     <a href="#reserve">방문예약</a>
   </nav>
 
@@ -27,17 +26,18 @@
 
 <section class="hero">
 
+  <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
 
-    <div class="hero-badge">
-      15만7천㎡ 문화공원을 품은 프리미엄 라이프
+    <div class="hero-chip">
+      15만7천㎡ 문화공원을 품은 프리미엄 숲세권
     </div>
 
     <h1>
-      보문산의 자연과<br>
-      도시의 편리함을 동시에
+      숲의 여유로움과<br>
+      도시의 편리함 사이
     </h1>
 
     <div class="hero-title">
@@ -45,8 +45,14 @@
     </div>
 
     <p class="hero-desc">
-      약 4만7천평 문화공원을 품은 민간공원 특례사업 프리미엄 아파트
+      보문산과 문화공원이 함께하는 자연 중심 프리미엄 라이프
     </p>
+
+    <div class="hero-tags">
+      <span>보문산 프리미엄</span>
+      <span>문화공원 숲세권</span>
+      <span>민간공원 특례사업</span>
+    </div>
 
     <div class="hero-buttons">
       <a href="#reserve" class="main-btn">방문예약 신청</a>
@@ -55,53 +61,59 @@
 
   </div>
 
-  <div class="hero-card">
+  <div class="hero-side-card">
 
-    <div class="card-top">
-      <span>PREMIUM BENEFIT</span>
-      <h3>계약축하금<br>2,000만원 지급</h3>
-    </div>
+    <div class="forest-photo"></div>
 
-    <div class="card-info">
-      <div>
+    <div class="side-content">
+
+      <div class="mini-label">FOREST PREMIUM</div>
+
+      <h3>
+        약 4만7천평<br>
+        문화공원을 품은 삶
+      </h3>
+
+      <div class="side-item">
         <small>84㎡ 기준</small>
         <strong>대전 최저 분양가</strong>
       </div>
 
-      <div>
+      <div class="side-item">
+        <small>계약축하금</small>
+        <strong>2,000만원 지급</strong>
+      </div>
+
+      <div class="side-item">
         <small>계약금</small>
         <strong>500만원</strong>
       </div>
 
-      <div>
-        <small>선착순</small>
-        <strong>한정세대 모집중</strong>
-      </div>
     </div>
 
   </div>
 
 </section>
 
-<section class="numbers" id="about">
+<section class="numbers">
 
-  <div class="number-box">
+  <div class="number-card">
     <span>문화공원</span>
     <h2>47,000평</h2>
   </div>
 
-  <div class="number-box">
+  <div class="number-card">
     <span>총 세대수</span>
     <h2>509세대</h2>
   </div>
 
-  <div class="number-box">
+  <div class="number-card">
     <span>타입</span>
     <h2>84㎡ · 126㎡</h2>
   </div>
 
-  <div class="number-box">
-    <span>프리미엄</span>
+  <div class="number-card">
+    <span>PREMIUM</span>
     <h2>숲세권 라이프</h2>
   </div>
 
@@ -111,7 +123,7 @@
 
   <div class="forest-left">
 
-    <span class="section-label">FOREST PREMIUM</span>
+    <span class="section-label">FOREST LIFE</span>
 
     <h2>
       365일 자연을 누리는<br>
@@ -123,7 +135,7 @@
       자연과 함께하는 프리미엄 주거환경
     </p>
 
-    <div class="forest-list">
+    <div class="forest-items">
 
       <div class="forest-item">
         <h4>문화의 숲</h4>
@@ -146,12 +158,12 @@
 
   <div class="forest-right">
 
-    <div class="main-visual"></div>
+    <div class="forest-main-image"></div>
 
-    <div class="sub-grid">
-      <div class="sub-img img1"></div>
-      <div class="sub-img img2"></div>
-      <div class="sub-img img3"></div>
+    <div class="forest-grid">
+      <div class="forest-sub img1"></div>
+      <div class="forest-sub img2"></div>
+      <div class="forest-sub img3"></div>
     </div>
 
   </div>
@@ -167,7 +179,7 @@
 
   <div class="premium-card">
     <span>PREMIUM 02</span>
-    <h3>합리적인 분양가</h3>
+    <h3>문화공원 특화 라이프</h3>
   </div>
 
   <div class="premium-card">
@@ -206,11 +218,13 @@
     <h3>방문 예약 및 상담 신청</h3>
 
     <form id="reserveForm">
+
       <input type="text" placeholder="이름을 입력하세요" required>
       <input type="tel" placeholder="연락처를 입력하세요" required>
-      <textarea placeholder="문의사항"></textarea>
+      <textarea placeholder="문의사항 입력"></textarea>
 
       <button type="submit">방문예약 신청하기</button>
+
     </form>
 
   </div>
