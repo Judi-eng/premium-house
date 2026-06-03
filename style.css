@@ -1,0 +1,436 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f6f2eb;
+color:#111;
+line-height:1.5;
+}
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:90px;
+background:rgba(255,255,255,0.95);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 50px;
+z-index:999;
+border-bottom:1px solid #eee;
+backdrop-filter:blur(10px);
+}
+
+.logo{
+font-size:34px;
+font-weight:bold;
+color:#b9965b;
+}
+
+.sub-logo{
+font-size:12px;
+font-weight:bold;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:#111;
+font-weight:600;
+}
+
+.reserve-top-btn{
+background:#b9965b;
+color:white;
+padding:14px 22px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+display:grid;
+grid-template-columns:0.9fr 1.1fr;
+min-height:100vh;
+padding:130px 50px 60px;
+gap:40px;
+align-items:center;
+}
+
+.hero-mini{
+font-size:28px;
+color:#555;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:92px;
+line-height:1.05;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:#c0a06a;
+}
+
+.hero-title-box{
+display:inline-block;
+background:#111;
+color:white;
+padding:16px 26px;
+font-size:34px;
+font-weight:bold;
+margin-bottom:24px;
+}
+
+.hero-desc{
+font-size:22px;
+color:#666;
+margin-bottom:28px;
+}
+
+.money-box{
+background:white;
+padding:28px;
+border-radius:14px;
+border:2px solid #d9c6a5;
+width:280px;
+margin-bottom:30px;
+text-align:center;
+}
+
+.money-box p{
+font-size:24px;
+color:#b9965b;
+}
+
+.money-box h2{
+font-size:60px;
+color:#b9965b;
+}
+
+.money-box span{
+font-size:34px;
+}
+
+.hero-buttons{
+display:flex;
+gap:16px;
+flex-wrap:wrap;
+}
+
+.black-btn,
+.white-btn{
+padding:18px 28px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+font-size:17px;
+}
+
+.black-btn{
+background:#111;
+color:#d9c6a5;
+}
+
+.white-btn{
+background:white;
+border:1px solid #ddd;
+color:#111;
+}
+
+.hero-image{
+height:760px;
+border-radius:24px;
+background:
+linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.05)),
+url('https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1800&auto=format&fit=crop')
+center/cover no-repeat;
+box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:0 50px 80px;
+margin-top:-40px;
+position:relative;
+z-index:10;
+}
+
+.benefit-card{
+background:white;
+padding:30px 20px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.icon{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.benefit-card h3{
+font-size:24px;
+}
+
+.nature-section{
+display:grid;
+grid-template-columns:0.9fr 1.1fr;
+gap:50px;
+padding:80px 50px;
+background:white;
+}
+
+.section-mini{
+font-size:24px;
+color:#b9965b;
+margin-bottom:20px;
+}
+
+.nature-left h2{
+font-size:62px;
+line-height:1.2;
+margin-bottom:40px;
+}
+
+.nature-item{
+margin-bottom:30px;
+}
+
+.nature-item h4{
+font-size:28px;
+margin-bottom:8px;
+}
+
+.nature-item p{
+font-size:18px;
+color:#666;
+}
+
+.nature-main{
+height:460px;
+border-radius:20px;
+background:
+url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1600&auto=format&fit=crop')
+center/cover no-repeat;
+margin-bottom:16px;
+}
+
+.nature-gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:14px;
+}
+
+.gallery-img{
+height:180px;
+border-radius:16px;
+background-size:cover;
+background-position:center;
+}
+
+.img1{
+background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop');
+}
+
+.img2{
+background-image:url('https://images.unsplash.com/photo-1493246318656-5bfd4cfb29b8?q=80&w=1200&auto=format&fit=crop');
+}
+
+.img3{
+background-image:url('https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=1200&auto=format&fit=crop');
+}
+
+.location-section{
+display:grid;
+grid-template-columns:1.1fr 0.9fr;
+gap:40px;
+padding:80px 50px;
+background:#f4f0ea;
+}
+
+.location-left h2{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.location-desc{
+font-size:20px;
+margin-bottom:30px;
+color:#555;
+}
+
+.map-box{
+height:420px;
+border-radius:20px;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:38px;
+color:#777;
+}
+
+.feature-box{
+background:white;
+padding:30px;
+border-radius:18px;
+margin-bottom:18px;
+}
+
+.feature-box h3{
+font-size:30px;
+margin-bottom:10px;
+color:#b9965b;
+}
+
+.feature-box p{
+font-size:18px;
+}
+
+.reserve-section{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+padding:80px 50px;
+background:#111;
+color:white;
+}
+
+.reserve-left h2{
+font-size:64px;
+margin-bottom:30px;
+}
+
+.reserve-left li{
+font-size:24px;
+margin-bottom:18px;
+}
+
+.reserve-right{
+background:white;
+padding:40px;
+border-radius:20px;
+color:#111;
+}
+
+.reserve-right h3{
+font-size:32px;
+margin-bottom:24px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+
+input{
+padding:20px;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:16px;
+}
+
+button{
+padding:20px;
+border:none;
+border-radius:10px;
+background:#c0a06a;
+color:white;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.footer{
+position:sticky;
+bottom:0;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+z-index:999;
+}
+
+.footer a{
+padding:24px;
+text-align:center;
+background:#111;
+color:white;
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
+}
+
+.footer a:last-child{
+background:#c0a06a;
+}
+
+@media(max-width:1000px){
+
+.header{
+padding:20px;
+height:auto;
+flex-direction:column;
+gap:16px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero,
+.nature-section,
+.location-section,
+.reserve-section,
+.benefits{
+grid-template-columns:1fr;
+}
+
+.hero{
+padding:180px 24px 60px;
+}
+
+.hero h1{
+font-size:58px;
+}
+
+.hero-image{
+height:420px;
+}
+
+.benefits,
+.nature-section,
+.location-section,
+.reserve-section{
+padding:60px 24px;
+}
+
+.nature-left h2,
+.location-left h2,
+.reserve-left h2{
+font-size:40px;
+}
+
+.footer{
+grid-template-columns:1fr;
+}
+
+}
